@@ -1,6 +1,6 @@
 const { DataTypes, Sequelize } = require('sequelize');
 
-module.export = (sequelize) => {
+module.exports = (sequelize) => {
 
     sequelize.define('activity', {
        
@@ -25,13 +25,13 @@ module.export = (sequelize) => {
             type: DataTypes.INTEGER,
             allowNull:false,
             validate:{
-                inNumeric: true,
+                isNumeric: true,
                 isInt: true,
             }
         },
 
         season:{
-            type: DataTypes.ENUN('Summer', 'Spring', 'Autumn', 'Winter'),
+            type: DataTypes.ENUM('Summer', 'Spring', 'Autumn', 'Winter'),
             allowNull: false,
         },
 

@@ -5,3 +5,11 @@ https://restcountries.com/v3/alpha/{code}
 GET https://restcountries.com/v3/all
 GET https://restcountries.com/v3/name/{name}
 GET https://restcountries.com/v3/alpha/{code}
+
+---------------------------------------------------------------------------------------------------------
+ Este comando en la consola de SQL para corregir ERROR:  carácter con secuencia de bytes 0xc4 0x93 en codificación «UTF8» 
+ no tiene equivalente en la codificación «WIN1252»
+
+ set client_encoding to "UTF8";
+
+ -----------------------------------------------------------------------------------------------------
